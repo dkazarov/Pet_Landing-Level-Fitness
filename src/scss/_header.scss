@@ -2,7 +2,8 @@
   display: block;
   max-height: 136px;
   background-color: $default-dark;
-  width: 100vw;
+  min-width: 100vw;
+  min-height: 100vh;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -41,8 +42,8 @@
     margin-right: 30px;
   }
   &__action-top-phone svg {
-     margin-right: 10px;
- }
+    margin-right: 10px;
+  }
   &__action-top-btn {
     border: 0;
     text-align: center;
@@ -69,5 +70,44 @@
   &__action-nav-link {
     color: $default-color;
     text-decoration: none;
+  }
+  .swiper {
+    .swiper-slide {
+      height: calc(100vh - 136px);
+      object-fit: cover;
+    }
+    &-pagination-bullet {
+      background-color: $accent-color;
+    }
+    &-button-prev {
+      width: 50px;
+      height: 50px;
+      margin-left: 55px;
+      cursor: pointer;
+      &:hover {
+        svg circle {
+          fill: $accent-color;
+          fill-opacity: 0.5;
+        }
+      }
+      &:after {
+        display: none;
+      }
+    }
+    &-button-next {
+      width: 50px;
+      height: 50px;
+      margin-right: 55px;
+      cursor: pointer;
+      &:hover {
+        svg circle {
+          fill: $accent-color;
+          fill-opacity: 0.5;
+        }
+      }
+      &:after {
+        display: none;
+      }
+    }
   }
 }
