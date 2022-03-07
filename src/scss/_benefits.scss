@@ -1,5 +1,6 @@
 .benefits {
   padding: 120px 0;
+  min-width: 100vw;
   &__cards-inner {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
