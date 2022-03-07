@@ -34,12 +34,33 @@
   font-size: 36px;
   line-height: 43px;
   @extend %lato-bold;
-  font-size: 36px;
-  line-height: 43px;
   margin-bottom: 30px;
 }
 
 .text {
   font-size: 18px;
   line-height: 26px;
+}
+.card-title {
+  @extend %lato-bold;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 15px;
+}
+.card-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f7f7f;
+  margin-bottom: 25px;
+}
+.btn {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid $accent-color;
+  padding: 9px 33px;
+  font-size: 14px;
+  line-height: 17px;
+  color: $accent-color;
 }
