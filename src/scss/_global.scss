@@ -25,6 +25,7 @@ body {
   min-width: 320px;
   scroll-behavior: smooth;   
   overflow-x: hidden;
+  @extend %lato-regular;
 }
 
 .container{
