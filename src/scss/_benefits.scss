@@ -1,15 +1,91 @@
 .benefits {
-   &__subtitle {}
-   &__cards-inner {}
-   &__card {}
-   &__card-img-inner {}
-   &__card-img {}
-   &__card-title {}
-   &__card-text {}
-}
-.container {
-}
-.subtitle {
-}
-.title {
+  padding: 120px 0;
+  &__cards-inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+  }
+  &__title {
+    margin-bottom: 60px;
+  }
+  &__card-img-inner {
+    margin-bottom: 30px;
+    position: relative;
+  }
+  .one {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 350px;
+      min-height: 100%;
+      background: rgba(231, 73, 15, 0.7);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 128px;
+      height: 128px;
+      left: 0;
+      bottom: 0;
+      background-image: url("../images/benefits-card-01.svg");
+    }
+  }
+  .two {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 350px;
+      min-height: 100%;
+      background: rgba(231, 73, 15, 0.7);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 128px;
+      height: 128px;
+      left: 0;
+      bottom: 0;
+      background-image: url("../images/benefits-card-02.svg");
+    }
+  }
+  .three {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 350px;
+      min-height: 100%;
+      background: rgba(231, 73, 15, 0.7);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 128px;
+      height: 128px;
+      left: 0;
+      bottom: 0;
+      background-image: url("../images/benefits-card-03.svg");
+    }
+  }
+  &__card-img {
+    max-width: 350px;
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+  &__card-title {
+    @extend %lato-bold;
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 15px;
+  }
+  &__card-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

@@ -22,3 +22,19 @@
   padding: 7px 14px;
   text-decoration: none;
 }
+.subtitle {
+  color: $accent-color;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 17px;
+  @extend %lato-bold;
+  margin-bottom: 12px;
+}
+.title {
+  font-size: 36px;
+  line-height: 43px;
+  @extend %lato-bold;
+  font-size: 36px;
+  line-height: 43px;
+  margin-bottom: 30px;
+}
