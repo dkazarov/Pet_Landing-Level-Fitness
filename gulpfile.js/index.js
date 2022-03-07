@@ -133,7 +133,7 @@ const watcher = () => {
  // Run dev
  const dev = series (
   clear,
-  parallel (html, scss, js, fonts), 
+  parallel (html, scss, js, images, fonts), 
   parallel(server, watcher)
  );
   // Run Build
