@@ -17,13 +17,22 @@ const closeModal = () => {
   document.body.style.overflow = '';
 };
 
+document.addEventListener('keydown', (e) => {
+  if (e.code === 'Escape') {
+    closeModal();
+  }
+});
+
 const canseledDefaultBehavior = (e) => {
   e.preventDefault;
-
   closeModal();
 };
 
-window.document.addEventListener('click', (e) => {});
+overlay.addEventListener('click', (e) => {
+  if (e.target === overlay || e.keydown == 'Escape') {
+    closeModal();
+  }
+});
 
 headerBtn.addEventListener('click', openModal);
 btnLarge.addEventListener('click', canseledDefaultBehavior);
