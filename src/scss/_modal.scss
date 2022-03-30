@@ -8,6 +8,7 @@
   height: 100vh;
   z-index: 2;
   .modal {
+    opacity: 0;
     background-color: $default-color;
     border-radius: 10px;
     position: absolute;
@@ -32,11 +33,14 @@
       background-size: cover;
       padding: 6px;
     }
-    &__form {
-    }
     &__form-subtitle {
       padding: 12px;
       font-size: 14px;
+    }
+
+    &__form-name input {
+      outline: none;
+      border: none;
     }
     &__form-name {
       display: block;
@@ -56,6 +60,9 @@
       border-radius: 5px;
       border: none;
       border-bottom: 1px solid $secondary-color;
+    }
+    input:focus {
+      outline: none !important;
     }
   }
   .btn--large {
@@ -93,4 +100,17 @@
 
 .overlay.active {
   display: block;
+}
+
+.modal.fadeIn {
+  animation: openModal 0.5s forwards;
+}
+
+@keyframes openModal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
