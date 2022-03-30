@@ -20,8 +20,8 @@ const closeModal = () => {
   document.body.style.overflow = '';
 };
 
-// close modal
-const canseledDefaultBehavior = (e) => {
+// close modal after click on button Sign up for a workout
+const canseledDefaultBehaviorButton = (e) => {
   e.preventDefault;
   closeModal();
 };
