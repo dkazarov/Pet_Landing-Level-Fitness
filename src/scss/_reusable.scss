@@ -21,6 +21,7 @@
   border: 1px solid #858585;
   padding: 7px 14px;
   text-decoration: none;
+  cursor: pointer;
 }
 .subtitle {
   color: $accent-color;
@@ -63,4 +64,32 @@
   font-size: 14px;
   line-height: 17px;
   color: $accent-color;
+  cursor: pointer;
+}
+
+.btn--large {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid $accent-color;
+  padding: 15px 33px;
+  font-size: 14px;
+  line-height: 17px;
+  background-color: $accent-color;
+  color: $default-color;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.input {
+  background-color: $default-dark;
+  padding: 20px;
+  width: 100%;
+  border-color: $secondary-color;
+  margin-bottom: 40px;
+  border: 1px solid #757575;
+  color: $secondary-color;
+  font-size: 18px;
+  line-height: 22px;
 }
