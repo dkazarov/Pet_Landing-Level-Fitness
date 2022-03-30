@@ -18,7 +18,7 @@ const closeModal = () => {
 };
 
 document.addEventListener('keydown', (e) => {
-  if (e.code === 'Escape') {
+  if (e.code === 'Escape' && overlay.classList.contains('active')) {
     closeModal();
   }
 });
@@ -29,7 +29,7 @@ const canseledDefaultBehavior = (e) => {
 };
 
 overlay.addEventListener('click', (e) => {
-  if (e.target === overlay || e.keydown == 'Escape') {
+  if (e.target === overlay) {
     closeModal();
   }
 });
