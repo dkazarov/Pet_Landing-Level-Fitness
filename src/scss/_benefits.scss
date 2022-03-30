@@ -14,63 +14,88 @@
     position: relative;
   }
   .one {
+    cursor: pointer;
+    overflow: hidden;
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       left: 0;
       min-width: 350px;
       min-height: 100%;
       background: rgba(231, 73, 15, 0.7);
+      transition: 0.5s ease-in-out;
+    }
+    &:hover {
+      &:before {
+        background: 0;
+        transition: 0.5s ease-in-out;
+      }
     }
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       width: 128px;
       height: 128px;
       left: 0;
       bottom: 0;
-      background-image: url("../images/benefits-card-01.svg");
+      background-image: url('../images/benefits-card-01.svg');
     }
   }
   .two {
+    cursor: pointer;
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       left: 0;
       min-width: 350px;
       min-height: 100%;
       background: rgba(231, 73, 15, 0.7);
+      transition: 0.5s ease-in-out;
+    }
+    &:hover {
+      &:before {
+        background: 0;
+        transition: 0.5s ease-in-out;
+      }
     }
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       width: 128px;
       height: 128px;
       left: 0;
       bottom: 0;
-      background-image: url("../images/benefits-card-02.svg");
+      background-image: url('../images/benefits-card-02.svg');
     }
   }
   .three {
+    cursor: pointer;
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       left: 0;
       min-width: 350px;
       min-height: 100%;
       background: rgba(231, 73, 15, 0.7);
+      transition: 0.5s ease-in-out;
+    }
+    &:hover {
+      &:before {
+        background: 0;
+        transition: 0.5s ease-in-out;
+      }
     }
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       width: 128px;
       height: 128px;
       left: 0;
       bottom: 0;
-      background-image: url("../images/benefits-card-03.svg");
+      background-image: url('../images/benefits-card-03.svg');
     }
   }
   &__card-img {
