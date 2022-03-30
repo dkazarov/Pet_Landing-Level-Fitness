@@ -1,0 +1,31 @@
+.call {
+  background-color: $default-dark;
+  padding: 0 0 100px 0; 
+  &__inner {
+    background-color: $default-color;
+    transform: skew(0, -5deg);
+    padding: 150px 0;
+  }
+  &__content {
+    max-width: 1000px;
+    margin: 0 auto;
+    letter-spacing: 0.3px;
+    transform: skew(0, 5deg);
+    text-align: center;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+}
+.text {
+   max-width: 540px;
+   margin: 0 auto;
+}
+.text span {
+   display: block;
+   padding-top: 20px;
+   margin-bottom: 60px;
+}
+.btn {
+
+}

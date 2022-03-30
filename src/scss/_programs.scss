@@ -6,6 +6,18 @@
   &__inner {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50px;
+      right: 250px;
+      background: rgba(231, 73, 15, 0.4);
+      filter: blur(230px);
+      z-index: 1;
+      width: 379px;
+      height: 379px;
+    }
   }
   &__info {
     max-width: 540px;
@@ -67,4 +79,3 @@
 }
 .programs-img {
 }
-
