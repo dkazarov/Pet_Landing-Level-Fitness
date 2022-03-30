@@ -68,6 +68,16 @@
     font-size: 14px;
     line-height: 17px;
     color: $accent-color;
+    cursor: pointer;
+    &:hover {
+      transition: 0.5s all;
+      transform: translateY(-5px);
+      background-color: $accent-color;
+      color: $default-color;
+    }
+    &:active {
+      background-color: $active-color;
+    }
   }
   &__btn {
     display: block;
@@ -75,5 +85,14 @@
     background-color: $accent-color;
     color: $default-color;
     max-width: 350px;
+    transition: 0.5s all;
+    cursor: pointer;
+    &:hover {
+      transition: 0.5s all;
+      transform: translateY(-5px);
+    }
+    &:active {
+      background-color: $active-color;
+    }
   }
 }

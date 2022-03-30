@@ -1,6 +1,14 @@
-import Swiper, { Navigation, Pagination, Keyboard, Autoplay } from 'swiper';
-
 ('use strict');
+import Swiper, { Navigation, Pagination, Keyboard, Autoplay } from 'swiper';
+import AOS from 'aos';
+
+//Aos
+AOS.init({
+  startEvent: 'DOMContentLoaded',
+  initClassName: 'aos-init',
+  animatedClassName: 'aos-animate',
+  easing: 'ease',
+});
 
 // Swiper
 const swiper = new Swiper('.swiper', {
@@ -29,6 +37,3 @@ const swiper = new Swiper('.swiper', {
     clickable: true,
   },
 });
-
-
-

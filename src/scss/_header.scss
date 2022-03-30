@@ -25,7 +25,13 @@
       transform: translateY(-5px);
     }
     &:active {
-      background-color: $active-color;
+      background: rgb(2, 0, 36);
+      background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 0.13489145658263302) 0%,
+        rgba(231, 72, 15, 1) 69%,
+        rgba(255, 51, 0, 1) 100%
+      );
     }
   }
   &__action {

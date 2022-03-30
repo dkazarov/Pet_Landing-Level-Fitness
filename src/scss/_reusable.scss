@@ -82,6 +82,20 @@
   color: $default-color;
   margin: 0 auto;
   cursor: pointer;
+  transition: 0.5 all;
+  &:hover {
+    transition: 0.5s all;
+    transform: translateY(-5px);
+  }
+  &:active {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 0.13489145658263302) 0%,
+      rgba(231, 72, 15, 1) 69%,
+      rgba(255, 51, 0, 1) 100%
+    );
+  }
 }
 
 .input {
@@ -94,4 +108,25 @@
   color: $secondary-color;
   font-size: 18px;
   line-height: 22px;
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 0.13489145658263302) 0%,
+    rgba(231, 72, 15, 1) 69%,
+    rgba(255, 51, 0, 1) 100%
+  );
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 $accent-color;
+    transition: 1s ease-in-out;
+  }
+  75% {
+    box-shadow: 0 0 0 12px transparent;
+  }
 }
