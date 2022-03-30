@@ -9,16 +9,21 @@ const btnLarge = document.querySelector('.btn--large');
 const openModal = () => {
   overlay.classList.add('active');
   modal.classList.add('fadeIn');
+  document.body.style.overflow = 'hidden';
 };
 
 const closeModal = () => {
   overlay.classList.remove('active');
+  document.body.style.overflow = '';
 };
 
 const canseledDefaultBehavior = (e) => {
   e.preventDefault;
+
   closeModal();
 };
+
+window.document.addEventListener('click', (e) => {});
 
 headerBtn.addEventListener('click', openModal);
 btnLarge.addEventListener('click', canseledDefaultBehavior);
