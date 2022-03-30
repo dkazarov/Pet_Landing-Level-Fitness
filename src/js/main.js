@@ -30,37 +30,5 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-// Ankor navigation
-const anchors = document.querySelectorAll('a[href*="#"]');
 
-for (let anchor of anchors) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
 
-    const blockID = anchor.getAttribute('href').substr(1);
-
-    document.getElementById(blockID).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
-  });
-}
-
-// Modal
-
-const headerBtn = document.querySelector('.header__action-top-btn');
-const overlay = document.querySelector('.overlay');
-const close = document.querySelector('.modal__close');
-const modal = document.querySelector('.modal');
-
-const openModal = () => {
-  overlay.classList.add('active');
-  modal.classList.add('fadeIn');
-};
-
-const closeModal = () => {
-  overlay.classList.remove('active');
-};
-
-headerBtn.addEventListener('click', openModal);
-close.addEventListener('click', closeModal);
