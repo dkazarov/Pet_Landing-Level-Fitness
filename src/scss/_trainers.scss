@@ -1,0 +1,82 @@
+.trainers {
+   padding: 120px 0 200px 0;
+   background-color: $default-dark;
+   color: $default-color;
+   min-width: 100vw;
+   &__inner {
+     display: flex;
+     justify-content: space-between;
+     position: relative;
+     &:before {
+       content: '';
+       position: absolute;
+       top: 50px;
+       right: 250px;
+       background: rgba(231, 73, 15, 0.4);
+       filter: blur(230px);
+       z-index: 1;
+       width: 379px;
+       height: 379px;
+     }
+   }
+   &__info {
+     max-width: 540px;
+   }
+   &__info-subtitle {
+   }
+   &__info-title {
+   }
+   &__info-text span {
+     display: inline-block;
+     padding-top: 10px;
+   }
+   &__img-inner {
+     max-width: 445px;
+     max-height: 300px;
+     padding-top: 100px;
+     margin-bottom: 200px;
+   }
+   &__cards-inner {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     margin-bottom: 80px;
+   }
+   &__card {
+     display: block;
+     margin: 0 auto;
+     max-width: 350px;
+     max-height: 445px;
+     padding: 30px 20px;
+   }
+   &__card-img-inner {
+     margin-bottom: 20px;
+     max-width: 310px;
+     max-height: 180px;
+     overflow: hidden;
+   }
+   &__card-title {
+   }
+   &__card-text {
+   }
+   &__card-btn {
+     display: block;
+     text-decoration: none;
+     text-transform: uppercase;
+     text-align: center;
+     border: 1px solid $accent-color;
+     padding: 9px 33px;
+     font-size: 14px;
+     line-height: 17px;
+     color: $accent-color;
+   }
+   &__btn {
+     display: block;
+     margin: 0 auto;
+     background-color: $accent-color;
+     color: $default-color;
+     max-width: 350px;
+   }
+ }
+ .programs-img {
+ }
+ 
