@@ -1,9 +1,5 @@
 .interior {
   padding: 120px 0;
-  &__subtitle {
-  }
-  &__title {
-  }
   &__inner {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -17,10 +13,4 @@
     max-height: 300px;
     background-size: cover;
   }
-}
-.container {
-}
-.subtitle {
-}
-.title {
 }
