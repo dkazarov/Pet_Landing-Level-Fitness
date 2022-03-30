@@ -1,0 +1,96 @@
+.overlay {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  .modal {
+    background-color: $default-color;
+    border-radius: 10px;
+    position: absolute;
+    max-width: 400px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    &__close {
+      position: absolute;
+      font-size: 35px;
+      right: -30px;
+      top: -30px;
+      color: $default-color;
+      cursor: pointer;
+    }
+    &__img-inner {
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    &__img {
+      max-width: 500px;
+      background-size: cover;
+      padding: 6px;
+    }
+    &__form {
+    }
+    &__form-subtitle {
+      padding: 12px;
+      font-size: 14px;
+    }
+    &__form-name {
+      display: block;
+      padding: 10px;
+      width: 90%;
+      margin: 0 auto;
+      border-radius: 5px;
+      border: none;
+      border-bottom: 1px solid $secondary-color;
+    }
+    &__form-phone {
+      display: block;
+      padding: 10px;
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: none;
+      border-bottom: 1px solid $secondary-color;
+    }
+  }
+  .btn--large {
+    width: 90%;
+    margin-bottom: 15px;
+    font-size: 12px;
+    transition: 1s all;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+    &:hover {
+      transition: 1s all;
+      transform: translateY(-3px);
+    }
+    &:active {
+      background-color: $active-color;
+    }
+  }
+  .tagline {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 14px;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 $accent-color;
+    transform: rotateY(30deg);
+  }
+  75% {
+    box-shadow: 0 0 0 12px transparent;
+  }
+}
+
+.overlay.active {
+  display: block;
+}

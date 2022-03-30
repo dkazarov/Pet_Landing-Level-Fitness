@@ -1,6 +1,7 @@
 .logo {
   max-width: 170px;
   max-height: 80px;
+  cursor: pointer;
 }
 .address {
   display: flex;
@@ -9,6 +10,9 @@
   font-style: normal;
   font-size: 18px;
   line-height: 22px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 .instagram {
   display: flex;

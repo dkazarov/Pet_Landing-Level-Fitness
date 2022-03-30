@@ -53,16 +53,16 @@
                <nav class="header__action-nav">
                   <ul class="header__cation-nav-list">
                      <li class="header__action-nav-item">
-                        <a class="header__action-nav-link" href="#">Групповые программы</a>
+                        <a class="header__action-nav-link" href="#programs-all">Групповые программы</a>
                      </li>
                      <li class="header__action-nav-item">
-                        <a class="header__action-nav-link" href="#">Тренара</a>
+                        <a class="header__action-nav-link" href="#trainers-all">Тренара</a>
                      </li>
                      <li class="header__action-nav-item">
-                        <a class="header__action-nav-link" href="#">Интерьер</a>
+                        <a class="header__action-nav-link" href="#interior-all">Интерьер</a>
                      </li>
                      <li class="header__action-nav-item">
-                        <a class="header__action-nav-link" href="#">Контакты</a>
+                        <a class="header__action-nav-link" href="#contacts">Контакты</a>
                      </li>
                   </ul>
                </nav>
@@ -180,7 +180,7 @@
             </div>
          </div>
 
-         <div class="programs__cards-inner">
+         <div class="programs__cards-inner" id="programs-all">
             <div class="programs__card">
                <div class="programs__card-img-inner">
                   <img src="./images/programs-card-img-01.jpg" alt="training">
@@ -256,7 +256,7 @@
       </div>
    </section>
 
-   <section class="trainers">
+   <section class="trainers" id="trainers-all">
       <div class="container">
          <div class="trainers__inner">
             <div class="trainers__info">
@@ -341,7 +341,7 @@
       </div>
    </section>
 
-   <section class="interior">
+   <section class="interior" id="interior-all">
       <div class="container">
          <div class="interior__subtitle subtitle">приглашаем в гости</div>
          <div class="interior__title title">Интерьер в фитнес-центре</div>
@@ -369,7 +369,7 @@
       </div>
    </section>
 
-   <footer class="footer">
+   <footer class="footer" id="contacts">
       <div class="container">
          <div class="footer__inner">
             <div class="footer__info">
@@ -411,7 +411,7 @@
                   тренажерами и залами для групповых тренировок.
                </p>
             </div>
-            <div class="footer__map">
+            <div class="footer__map" href="#address-id" id="map">
                <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.538762450791!2d30.484510051450055!3d50.39379619922546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c8daee2e02bd%3A0x309b0427b63c50c6!2z0LLRg9C70LjRhtGPINCS0LDRgdC40LvRjNC60ZbQstGB0YzQutCwLCAzNCwg0JrQuNGX0LIsINCj0LrRgNCw0ZfQvdCwLCAwMzAyMg!5e0!3m2!1suk!2sde!4v1648654048222!5m2!1suk!2sde"
                   width="570" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -421,6 +421,26 @@
       </div>
       <p class="copyright">Level Fitness © 2022</p>
    </footer>
+
+   <div class="overlay">
+      <div class="modal">
+         <div class="modal__close">&times;</div>
+         <div class="modal__img">
+            <div class="modal__img-inner">
+               <img src="./images/programs-card-img-03.jpeg" alt="registration image">
+            </div>
+            <form class="modal__form">
+               <div class="modal__form-subtitle">Имя</div>
+               <input class="modal__form-name" type="text" placeholder="Например Алина">
+               <div class="modal__form-subtitle">Номер телефона</div>
+               <input class="modal__form-phone" type="tel" placeholder="+3 (___) ___-__-__">
+
+               <button class="btn--large">Записаться на тренировку</button>
+               <div class="tagline">Спортивное счастье рядом!</div>
+            </form>
+         </div>
+      </div>
+   </div>
 
    <script src="js/main.js"></script>
 </body>
