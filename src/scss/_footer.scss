@@ -1,0 +1,56 @@
+.footer {
+  background-color: $default-dark;
+  padding-top: 120px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid $border-color;
+    margin-bottom: 40px;
+  }
+//   &__info-inner {
+//     display: flex;
+//     align-items: center;
+//   }
+  &__info {
+    max-width: 540px;
+    color: $default-color;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 90px 60px;
+  }
+  &__info-schedule {
+    display: flex;
+  }
+  &__info-schedule-text {
+    padding-left: 10px;
+    margin-bottom: 30px;
+  }
+  &__info-phone {
+    display: flex;
+  }
+  &__info-phone-number {
+    padding-left: 12px;
+    margin-bottom: 30px;
+    color: $default-color;
+    text-decoration: none;
+  }
+  &__info-descr {
+    font-size: 16px;
+    line-height: 24px;
+    color: $secondary-color;
+  }
+  &__map {
+    max-width: 570px;
+  }
+}
+.address {
+  margin-bottom: 30px;
+}
+.copyright {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $secondary-color;
+  padding-bottom: 40px;
+}
