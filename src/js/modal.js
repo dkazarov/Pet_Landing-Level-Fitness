@@ -56,5 +56,5 @@ const modalTimer = setTimeout(openModal, 30000);
 
 window.addEventListener('scroll', showModalByScroll);
 headerBtn.addEventListener('click', openModal);
-btnLarge.addEventListener('click', canseledDefaultBehavior);
+btnLarge.addEventListener('click', canseledDefaultBehaviorButton);
 close.addEventListener('click', closeModal);
