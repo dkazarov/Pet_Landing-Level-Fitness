@@ -57,6 +57,10 @@
   .benefits__card {
     max-width: 90%;
   }
+  .benefits__cards-inner {
+    display: grid;
+    justify-items: center;
+  }
   .benefits__card-img-inner {
     &:before {
       display: none;
@@ -149,6 +153,9 @@
     &:before {
       display: none;
     }
+  }
+  .registration__title {
+    margin-bottom: 20px;
   }
   .registration__line {
     margin-bottom: 30px;
