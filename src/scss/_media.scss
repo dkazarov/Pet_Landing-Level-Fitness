@@ -1,29 +1,207 @@
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
-
 }
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
-
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
-
+  .header {
+    min-height: 0vh;
+    .swiper {
+      display: none;
+    }
+  }
+  .header__inner {
+    padding: 15px 0 30px 0;
+  }
+  .header__location {
+    display: none;
+  }
+  .subtitle {
+    font-size: 12px;
+    margin: 0;
+  }
+  .title {
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+  .text {
+    font-size: 13px;
+  }
+  .text span {
+    padding-top: 10px;
+    margin: 0;
+  }
+  .about {
+    padding: 0 0 30px 0;
+  }
+  .about__info {
+    max-width: 50%;
+    padding-right: 20px;
+  }
+  .about__img-inner {
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+  }
+  .benefits {
+    padding: 30px 0;
+  }
+  .benefits__title {
+    margin-bottom: 20px;
+  }
+  .benefits__card {
+    max-width: 90%;
+  }
+  .benefits__card-img-inner {
+    &:before {
+      display: none;
+    }
+  }
+  .benefits .one::after,
+  .benefits .two::after,
+  .benefits .three::after {
+    display: none;
+  }
+  .benefits__card-title {
+    text-align: center;
+    font-size: 24px;
+  }
+  .benefits__card-text {
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+  }
+  .programs {
+    padding: 30px 0 20px 0;
+  }
+  .programs__inner {
+    &::before {
+      display: none;
+    }
+  }
+  .programs__info {
+    padding-right: 20px;
+    text-align: center;
+  }
+  .programs__img-inner {
+    padding-top: 0;
+    max-height: 0;
+  }
+  .programs__card-title {
+    font-size: 20px;
+  }
+  .programs__btn {
+    margin-bottom: 30px;
+  }
+  .call {
+    padding-bottom: 50px;
+  }
+  .call__inner {
+    padding: 60px 0 40px 0;
+  }
+  .text {
+    margin-bottom: 30px;
+  }
+  .trainers {
+    padding: 0px;
+  }
+  .trainers__info {
+    padding-right: 20px;
+    text-align: center;
+  }
+  .trainers__inner {
+    max-height: 270px;
+    &:before {
+      display: none;
+    }
+  }
+  .trainers__card {
+    text-align: center;
+  }
+  .trainers__cards-inner {
+    margin-bottom: 0;
+  }
+  .trainers__img-inner {
+    padding-top: 0;
+  }
+  .trainers__card-img-inner {
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+  .trainers__card-title {
+    font-size: 20px;
+  }
+  .card-text {
+    font-size: 14px;
+  }
+  .registration {
+    padding: 30px;
+    &:after {
+      display: none;
+    }
+    &:before {
+      display: none;
+    }
+  }
+  .registration__line {
+    margin-bottom: 30px;
+  }
+  .interior {
+    padding: 30px 0;
+  }
+  .interior__title {
+    margin-bottom: 20px;
+  }
+  .footer {
+    padding: 30px 0;
+  }
+  .footer__inner {
+    margin-bottom: 10px;
+  }
+  .footer__info {
+    text-align: center;
+    padding: 15px;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .footer__info-address,
+  .header__address,
+  .address {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .footer__info-phone {
+    padding: 10px;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .footer__map {
+    iframe {
+      width: 100%;
+    }
+  }
+  .copyright {
+    padding: 0;
+  }
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
-
 }
 
 /* Iphone 5 */
 @media (max-width: 320px) {
-
 }

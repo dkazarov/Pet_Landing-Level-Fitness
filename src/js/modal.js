@@ -45,7 +45,7 @@ const showModalByScroll = () => {
 };
 
 // Open modal by time
-const modalTimer = setTimeout(openModal, 30000);
+const modalTimer = setTimeout(openModal, 120000);
 
 window.addEventListener('scroll', showModalByScroll);
 headerBtn.addEventListener('click', openModal);
