@@ -226,22 +226,26 @@
     width: 100%;
     text-align: center;
     z-index: 5;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 1);
     animation: openModal 0.5s forwards;
   }
   .header__action.active {
     display: block;
   }
   .header__action-nav {
-    padding: 20px;
+    padding: 40px;
   }
   .header__action-top {
     margin: 0;
   }
   .header__action-nav-link {
     color: $default-dark;
+    font-size: 28px;
+    margin-bottom: 40px;
+    display: inline-block;
   }
-  .header__cation-nav {
+  .header__cation-nav-list {
+    display: inline-block;
   }
   .header__action-top-btn {
     display: none;
@@ -251,9 +255,7 @@
   }
   .header__action-nav-item {
     display: block;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 10px;
+    margin: 0 auto;
   }
   .burger {
     position: absolute;
@@ -378,16 +380,77 @@
     margin-bottom: 30px;
     width: 90%;
   }
+  .call {
+    padding-bottom: 40px;
+  }
   .call__inner {
-    padding: 60px;
+    padding: 60px 0 40px 0;
   }
-  .call__content {
+  .trainers {
+    padding: 0 0 30px 0;
+    text-align: center;
   }
-  .registration::after,
-  .registration::before {
+  .trainers__inner {
+    justify-content: center;
+    &::before {
+      display: none;
+    }
+  }
+  .trainers-img {
     display: none;
   }
-  .footer__map {
-    display: none;
+  .trainers__card {
+    display: grid;
+    justify-items: center;
   }
+  .trainers__cards-inner {
+    display: grid;
+    margin-bottom: 30px;
+    gap: 10px;
+  }
+}
+.registration {
+  padding-bottom: 40px;
+}
+.registration::after,
+.registration::before {
+  display: none;
+}
+.interior {
+  padding: 30px 0;
+}
+.interior__inner {
+  grid-template-columns: repeat(auto-fit, minmax(268px, 1fr));
+  margin-bottom: 20px;
+  gap: 10px;
+}
+.footer {
+  padding: 20px 0;
+}
+.footer__inner {
+  margin-bottom: 20px;
+}
+.footer__info {
+  display: block;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+}
+.footer__info-schedule {
+  display: flex;
+  justify-content: center;
+}
+.footer__info-address {
+  display: flex;
+  justify-content: center;
+}
+.footer__info-phone {
+  display: flex;
+  justify-content: center;
+}
+.footer__map {
+  display: none;
+}
+.copyright {
+  padding: 0;
 }
