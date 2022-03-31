@@ -4,7 +4,6 @@ const headerBtn = document.querySelector('.header__action-top-btn');
 const overlay = document.querySelector('.overlay');
 const close = document.querySelector('.modal__close');
 const modal = document.querySelector('.modal');
-const btnLarge = document.querySelector('.btn--large');
 
 // Open modal
 const openModal = () => {
@@ -18,12 +17,6 @@ const openModal = () => {
 const closeModal = () => {
   overlay.classList.remove('active');
   document.body.style.overflow = '';
-};
-
-// close modal after click on button Sign up for a workout
-const canseledDefaultBehaviorButton = (e) => {
-  e.preventDefault;
-  closeModal();
 };
 
 // Listener on key ESCAPE
@@ -56,5 +49,4 @@ const modalTimer = setTimeout(openModal, 30000);
 
 window.addEventListener('scroll', showModalByScroll);
 headerBtn.addEventListener('click', openModal);
-btnLarge.addEventListener('click', canseledDefaultBehaviorButton);
 close.addEventListener('click', closeModal);
