@@ -2,11 +2,9 @@
   padding: 120px 0 200px 0;
   background-color: $default-dark;
   color: $default-color;
-  min-width: 100vw;
   &__inner {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     position: relative;
     &:before {
       content: '';

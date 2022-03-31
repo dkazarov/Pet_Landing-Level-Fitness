@@ -365,7 +365,9 @@
     margin-bottom: 30px;
   }
   .programs__cards-inner {
+    grid-template-columns: repeat(auto-fit, minmax(268px, 1fr));
     margin-bottom: 20px;
+    gap: 10px;
   }
   .programs__card {
     display: grid;
@@ -376,7 +378,11 @@
     margin-bottom: 30px;
     width: 90%;
   }
-
+  .call__inner {
+    padding: 60px;
+  }
+  .call__content {
+  }
   .registration::after,
   .registration::before {
     display: none;
