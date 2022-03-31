@@ -310,6 +310,24 @@
   .about__info-text span {
     margin: 0;
   }
+  .benefits {
+    padding: 30px 0;
+  }
+  .benefits__title {
+    margin-bottom: 30px;
+  }
+  .benefits__card-img-inner {
+    max-width: 90%;
+    margin-bottom: 0;
+  }
+  .benefits__card {
+    display: grid;
+    justify-items: center;
+  }
+  .benefits__card-img-inner {
+    display: flex;
+    flex-direction: inherit;
+  }
   .benefits .one::before,
   ::after,
   .benefits .two::before,
@@ -318,6 +336,47 @@
   ::after {
     display: none;
   }
+  .benefits__card-title {
+    font-size: 18px;
+    text-align: center;
+    line-height: 18px;
+    margin-bottom: 0;
+  }
+  .benefits__card-text {
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    padding: 5px;
+  }
+  .programs {
+    padding: 30px 0 60px 0;
+    text-align: center;
+  }
+  .programs__inner {
+    justify-content: center;
+    &:before {
+      display: none;
+    }
+  }
+  .programs-img {
+    display: none;
+  }
+  .programs__info-text span {
+    margin-bottom: 30px;
+  }
+  .programs__cards-inner {
+    margin-bottom: 20px;
+  }
+  .programs__card {
+    display: grid;
+    justify-items: center;
+    padding: 0;
+  }
+  .programs__card-btn {
+    margin-bottom: 30px;
+    width: 90%;
+  }
+
   .registration::after,
   .registration::before {
     display: none;

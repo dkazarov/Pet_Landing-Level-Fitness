@@ -6,6 +6,7 @@
   &__inner {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     position: relative;
     &:before {
       content: '';
@@ -34,7 +35,7 @@
   }
   &__cards-inner {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     margin-bottom: 80px;
   }
   &__card {
