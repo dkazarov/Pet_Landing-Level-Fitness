@@ -195,13 +195,110 @@
 }
 
 /* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
-}
-
-/* Portrait phones and smaller */
-@media (max-width: 480px) {
+@media (min-width: 480px) and (max-width: 767px) {
+  .header {
+    min-height: 0vh;
+    .swiper {
+      display: none;
+    }
+  }
+  .header__inner {
+    padding: 10px 0;
+  }
+  .logo__img {
+    max-height: 50px;
+  }
+  .header__location {
+    display: none;
+  }
+  .header__action {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.8);
+    animation: openModal 0.5s forwards;
+  }
+  .header__action.active {
+    display: block;
+  }
+  .header__action-nav {
+    padding: 20px;
+  }
+  .header__action-top {
+    margin: 0;
+  }
+  .header__action-nav-link {
+    color: $default-dark;
+  }
+  .header__cation-nav {
+  }
+  .header__action-top-btn {
+    display: none;
+  }
+  .header__action-top-phone {
+    display: none;
+  }
+  .header__action-nav-item {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  .burger {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    top: 25px;
+    right: 15px;
+    &__center {
+      display: block;
+      width: 30px;
+      height: 1px;
+      background-color: #fff;
+      top: 0;
+      right: 0;
+    }
+    &:before {
+      content: '';
+      display: block;
+      width: 30px;
+      height: 1px;
+      background-color: #fff;
+      top: 0px;
+      right: 0;
+    }
+    &:after {
+      content: '';
+      display: block;
+      width: 30px;
+      height: 1px;
+      background-color: #fff;
+      top: 0px;
+      right: 0;
+    }
+  }
+  .about {
+    position: relative;
+    padding: 30px 0;
+  }
+  .about__info {
+    max-width: 50%;
+    padding-right: 20px;
+  }
+  .about__img-inner {
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+  }
 }
 
 /* Iphone 5 */
-@media (max-width: 320px) {
+@media (min-width: 320px) {
 }
