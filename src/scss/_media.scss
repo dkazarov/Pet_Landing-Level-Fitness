@@ -32,6 +32,10 @@
     display: flex;
     width: 100%;
   }
+  .interior__inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 200px));
+  }
 }
 
 /* Portrait tablets and small desktops */
@@ -425,6 +429,8 @@
 .registration::before {
   display: none;
 }
+.interior__img-inner {
+}
 .footer {
   padding-top: 30px;
 }
@@ -709,6 +715,9 @@
 }
 .btn--large {
   width: 90%;
+}
+.interior__inner {
+  justify-items: center;
 }
 .footer {
   padding-top: 30px;
