@@ -16,6 +16,8 @@ const babel = require('gulp-babel');
 const csso = require('gulp-csso');
 const size = require("gulp-size");
 const webp = require('gulp-webp');
+var gulp = require('gulp');
+var ghPages = require('gulp-gh-pages');
 
 // Imports
 const clear = require('../tasks/clear');
@@ -30,6 +32,11 @@ const server = () => {
     },
   });
 };
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
 
  // Scss
 const scss = () => {
