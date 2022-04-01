@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "gulp --development",
-    "build": "build --prodaction"
+    "build": "build --prodaction",
+    "deploy": "gh-pages -d dist"
   },
   "browserslist": [
     "last 3 versions"
@@ -23,6 +24,7 @@
     "@babel/preset-env": "^7.16.11",
     "browser-sync": "^2.27.7",
     "del": "^6.0.0",
+    "gh-pages": "^3.2.3",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-babel": "^8.0.0",
