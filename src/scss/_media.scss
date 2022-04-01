@@ -342,14 +342,6 @@
     display: flex;
     flex-direction: inherit;
   }
-  .benefits .one::before,
-  ::after,
-  .benefits .two::before,
-  ::after,
-  .benefits .three::before,
-  ::after {
-    display: none;
-  }
   .benefits__card-title {
     font-size: 18px;
     text-align: center;
@@ -396,7 +388,10 @@
     padding-bottom: 40px;
   }
   .call__inner {
-    padding: 60px 0 40px 0;
+    padding: 80px 0 60px 0;
+  }
+  .call__title {
+    font-size: 30px;
   }
   .trainers {
     padding: 0 0 30px 0;
@@ -435,4 +430,19 @@
   grid-template-columns: repeat(auto-fit, minmax(268px, 1fr));
   margin-bottom: 20px;
   gap: 10px;
+}
+.footer {
+  padding-top: 30px;
+}
+.footer__inner {
+  margin-bottom: 20px;
+}
+.footer__info {
+  padding: 20px;
+}
+.footer__map {
+  width: 50%;
+}
+.copyright {
+  padding-bottom: 15px;
 }
