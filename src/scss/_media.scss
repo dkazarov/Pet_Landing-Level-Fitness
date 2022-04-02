@@ -51,10 +51,15 @@
     }
   }
   .header__inner {
+    display: flex;
+    justify-content: space-around;
     padding: 15px 0 30px 0;
   }
   .header__location {
     display: none;
+  }
+  .header__action {
+    margin-right: 0;
   }
   .subtitle {
     font-size: 12px;
@@ -445,8 +450,6 @@
 .registration::before {
   display: none;
 }
-.interior__img-inner {
-}
 .footer {
   padding-top: 30px;
 }
@@ -593,7 +596,7 @@
   }
   .benefits__cards-inner {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   }
   .benefits__card {
     display: grid;
@@ -606,20 +609,20 @@
     display: flex;
     justify-content: center;
     flex-direction: inherit;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .benefits__card-title {
-    font-size: 18px;
+    font-size: 28px;
     text-align: center;
     line-height: 18px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     text-align: center;
   }
   .benefits__card-text {
-    font-size: 10px;
+    font-size: 18px;
     text-align: center;
     padding: 5px;
-    line-height: 15px;
+    margin-bottom: 20px;
   }
   .programs {
     padding: 30px 0 60px 0;
@@ -662,11 +665,13 @@
   }
   .call__title {
     font-size: 28px;
-    padding: 0px 0;
     line-height: 32px;
+    padding: 0 10px;
   }
   .call__text {
     font-size: 14px;
+    padding: 0 10px;
+    font-size: 18px;
   }
   .trainers {
     padding: 0 0 30px 0;
@@ -680,11 +685,10 @@
   }
   .trainers__info-title {
     font-size: 28px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .trainers__info-text {
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 16px;
   }
   .trainers__card-img-inner {
     max-width: 90%;
