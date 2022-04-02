@@ -321,7 +321,7 @@
   }
   .about {
     position: relative;
-    padding: 30px 0;
+    padding: 40px 0;
   }
   .about__inner {
     display: flex;
@@ -330,8 +330,6 @@
   }
   .about__info {
     text-align: center;
-    padding-right: 20px;
-    padding-right: 0;
   }
   .about__img-inner {
     display: none;
@@ -674,7 +672,7 @@
     font-size: 18px;
   }
   .trainers {
-    padding: 0 0 30px 0;
+    padding: 0 0 20px 0;
     text-align: center;
   }
   .trainers__inner {
@@ -689,6 +687,7 @@
   }
   .trainers__info-text {
     font-size: 16px;
+    margin-bottom: 20px;
   }
   .trainers__card-img-inner {
     max-width: 90%;
@@ -700,8 +699,8 @@
     display: grid;
     justify-items: center;
   }
-  .trainers__card-text:last-child {
-    margin-bottom: 0;
+  .trainers__card-text {
+    margin-bottom: 20px;
   }
   .trainers__cards-inner {
     display: grid;
