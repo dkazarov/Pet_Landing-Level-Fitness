@@ -35,7 +35,7 @@
   &__cards-inner {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
   &__card {
     display: block;
