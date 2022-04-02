@@ -1,22 +1,17 @@
 .header {
-  max-height: 136px;
+  max-height: 100px;
   background-color: $default-dark;
   min-width: 100vw;
-  min-height: 100vh;
-
   &__inner {
-    display: flex;
     width: 100%;
     top: 0;
     left: 0;
+    display: flex;
     justify-content: space-between;
-    padding: 20px 0;
     position: fixed;
+    padding: 20px 10px;
     background-color: rgba(0, 0, 0, 0.8);
-    z-index: 10;
-  }
-  .logo__img {
-    padding-left: 20px;
+    z-index: 1;
   }
   &__location {
     display: flex;

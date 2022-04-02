@@ -44,16 +44,14 @@
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
+  .burger {
+    display: none;
+  }
   .header {
     min-height: 0vh;
     .swiper {
       display: none;
     }
-  }
-  .header__inner {
-    display: flex;
-    justify-content: space-around;
-    padding: 15px 0 30px 0;
   }
   .header__location {
     display: none;
@@ -78,7 +76,7 @@
     margin: 0;
   }
   .about {
-    padding: 120px 0 30px 0;
+    padding: 150px 0 30px 0;
   }
   .about__info {
     max-width: 50%;
@@ -135,6 +133,7 @@
   }
   .programs__cards-inner {
     margin-bottom: 40px;
+    padding-top: 50px;
   }
   .programs__img-inner {
     padding-top: 0;
@@ -173,6 +172,7 @@
   }
   .trainers__cards-inner {
     margin-bottom: 0;
+    padding-top: 50px;
   }
   .trainers__img-inner {
     padding-top: 0;
