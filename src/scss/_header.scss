@@ -97,6 +97,9 @@
       background-color: $active-color;
     }
   }
+  &__action-top-btn.pulse {
+    background-color: $accent-color;
+  }
   &__action-nav-item {
     display: inline-block;
     margin-right: 20px;
