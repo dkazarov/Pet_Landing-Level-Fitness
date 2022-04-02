@@ -9,6 +9,10 @@
   &__title {
     margin-bottom: 60px;
   }
+  &__card {
+    display: grid;
+    justify-items: center;
+  }
   &__card-img-inner {
     margin-bottom: 30px;
     position: relative;

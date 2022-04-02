@@ -1,5 +1,9 @@
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
+  .interior__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
   .footer__inner {
     display: flex;
     justify-content: space-between !important;
@@ -34,7 +38,7 @@
   }
   .interior__inner {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1fr, 200px));
+    grid-template-columns: repeat(auto-fit, minmax(3fr, 350px));
   }
 }
 
@@ -69,7 +73,7 @@
     margin: 0;
   }
   .about {
-    padding: 0 0 30px 0;
+    padding: 120px 0 30px 0;
   }
   .about__info {
     max-width: 50%;
@@ -81,7 +85,7 @@
     align-items: center;
   }
   .about__info-text {
-    font-size: 15px;
+    font-size: 14px;
   }
   .benefits {
     padding: 30px 0;
@@ -317,6 +321,7 @@
   .about__inner {
     display: flex;
     justify-content: center;
+    padding-bottom: 20px;
   }
   .about__info {
     text-align: center;
@@ -327,9 +332,16 @@
     display: none;
   }
   .about__info-title {
-    padding-top: 20px;
+    padding-top: 15px;
+  }
+  .about__info-text.text {
+    font-size: 18px;
+  }
+  .text span {
+    padding-top: 10px;
   }
   .about__info-text span {
+    overflow: visible;
     margin: 0;
   }
   .benefits {
@@ -400,6 +412,7 @@
   }
   .call__title {
     font-size: 30px;
+    padding: 0 20px;
   }
   .trainers {
     padding: 0 0 30px 0;
