@@ -1,5 +1,17 @@
-/* Large desktops and laptops */
 @media (min-width: 1200px) {
+  .header {
+    width: 100%;
+  }
+  .header__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__action {
+    margin-right: 0;
+  }
+  .burger {
+    display: none;
+  }
   .interior__inner {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -25,6 +37,9 @@
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
+  .burger {
+    display: none;
+  }
   .footer__info {
     width: 50%;
   }
